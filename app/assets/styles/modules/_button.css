@@ -1,0 +1,7 @@
+.button {
+    padding: 10px 7px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: $mainOrange;
+}
