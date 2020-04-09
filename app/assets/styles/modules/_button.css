@@ -13,7 +13,37 @@
         background-color: rgba(20, 20, 500, .2);
         position: relative;
         transition: background-color .3s ease-out;
-        box-shadow: 0px 30px 20px #333;
+        box-shadow: 0px 30px 20px rgba(0, 0, 0, .3);
+    }
+
+    &__animation-styleA {
+        transform: translateY(0px);
+        animation: float 5.3s ease-in infinite;
+    }
+
+    &__animation-styleB {
+        transform: translateY(0px);
+        animation: float 5.5s ease-out infinite;
+    }
+
+    &__animation-styleC {
+        transform: translateY(0px);
+        animation: float 5.7s ease-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translatey(-5px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
     }
 
     &__round:hover {
