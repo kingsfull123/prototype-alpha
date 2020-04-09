@@ -8,14 +8,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
-        <h1>testing testing testing</h1>
-
-        <div class='container'>
-            <h1 class="container__title">this is my portfolio webpage</h1>
-            <h4 class="container__subtitle">some content here</h4>
-            <a href="#" class="button">Contact me</a>
+        <div class='coverpage'>
+            <nav class='site-header'>
+                <ul>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#my-work">My work</a></li>
+                    <li><a href="#contact-me">Contect me</a></li>
+                </ul>
+            </nav>
+            <div class='coverpage--button-container'>
+                <ul>
+                    <li><a class='button button__round' href="#about-me"><span class='button__text'>About me</span></a></li>
+                    <li><a class='button button__round' href="#my-work"><span class='button__text'>My work</span></a></li>
+                    <li><a class='button button__round' href="#contact-me"><span class='button__text'>Contact me</span></a></li>
+                </ul>
+            </div>
+            <img class='coverpage--bg' src="./assets/images/pexels-photo-3629227.jpeg" alt="city dawn">
         </div>
+
+        <div id='about-me'>
+            <img src="./assets/images/nightstree.jpg" alt="nightstreet">
+            <h3>About me</h3>
+            
+            <p>Bacon ipsum dolor amet chuck fatback swine hamburger landjaeger meatball picanha ribeye buffalo bresaola shankle
+            beef. Tongue flank frankfurter burgdoggen, ham hock landjaeger pastrami prosciutto jowl shank ground round ribeye.
+            Meatball kielbasa tail tri-tip hamburger prosciutto landjaeger filet mignon leberkas jerky pastrami. Shoulder hamburger
+            drumstick, salami pastrami rump fatback pork prosciutto turkey cow brisket andouille jerky. Beef ribs tenderloin swine
+            drumstick bacon ribeye chicken.</p>
+            
+            <p>Pig ham corned beef, cow andouille turkey strip steak filet mignon venison pork meatloaf pork loin boudin burgdoggen
+            cupim. Meatloaf short loin pancetta kevin biltong picanha, prosciutto fatback ribeye jerky pastrami tail strip steak
+            shankle. Meatloaf pastrami landjaeger, pork chop prosciutto ribeye alcatra swine jerky. Andouille brisket bacon,
+            landjaeger biltong short ribs pancetta corned beef tongue bresaola chicken shoulder. Shankle biltong jowl pork loin
+            brisket salami capicola. Landjaeger pancetta drumstick cupim, swine tail frankfurter meatball tongue pig shank bacon
+            porchetta. Short ribs biltong kevin tenderloin, turkey andouille strip steak.</p>
+        </div>
+
+        <div id='my-work'>
+            <h3>My Projects</h3>
+            <div>
+                <h4>project 1</h4>
+                <img src="./assets/images/stars.jpg" alt="starts">
+                <h5>description</h5>
+                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+            
+                <h4>project 2</h4>
+                <img src="./assets/images/stars.jpg" alt="starts">
+                <h5>description</h5>
+                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+            
+                <h4>project 3</h4>
+                <img src="./assets/images/stars.jpg" alt="starts">
+                <h5>description</h5>
+                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+            
+            </div>
+        </div>
+        <div id='contact-me'>
+            <h3>Contact me</h3>
+            <form>
+                <label>Name:
+                  <input name="submitted-name" autocomplete="name">
+                </label>
+                <button>Save</button>
+              </form>
+              
+              <!-- Form which will send a POST request to the current URL -->
+              <form method="post">
+                <label>Name:
+                  <input name="submitted-name" autocomplete="name">
+                </label>
+                <button>Save</button>
+              </form>
+              
+              <!-- Form with fieldset, legend, and label -->
+              <form method="post">
+                <fieldset>
+                  <legend>Title</legend>
+                  <label><input type="radio" name="radio"> Select me</label>
+                </fieldset>
+              </form>
+        </div>
+        
+        <footer>&copy;copyright 2020 jasonyang.tech</footer>
 
         <script src="bundled.js"></script>
     </body>

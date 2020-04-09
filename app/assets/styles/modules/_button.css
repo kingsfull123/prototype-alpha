@@ -1,7 +1,32 @@
 .button {
-    padding: 10px 7px;
     border: none;
     outline: none;
-    border-radius: 3px;
-    background-color: $mainOrange;
+    text-decoration: none;
+    padding: 10px;
+
+
+    &__round {
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: rgba(20, 20, 500, .2);
+        position: relative;
+        transition: background-color .3s ease-out;
+        box-shadow: 0px 30px 20px #333;
+    }
+
+    &__round:hover {
+        background-color: rgba(290, 140, 50, .8);
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: capitalize;
+        color: #FFF;
+    }
 }
+
