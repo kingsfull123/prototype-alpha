@@ -29,77 +29,127 @@
                     <li><a class='button button__round button__animation-styleC' href="#contact-me"><span class='button__text'>Contact me</span></a></li>
                 </ul>
             </div>
-            <img class='coverpage--bg' src="./assets/images/pexels-photo-3629227.jpeg" alt="city dawn">
+            <picture>
+                <source srcset='./assets/images/bg.jpeg' media='(min-width: 1000px)'>
+                <source srcset='./assets/images/bg--medium.jpg' media='(min-width: 800px)'>
+                <source srcset='./assets/images/bg--small.jpg' media='(min-width: 650px)'>
+                <img class='coverpage--bg' src="./assets/images/bg--smaller.jpg" alt="city dawn">
+            </picture>
         </div>
 
-        <div id='about-me' class='about-me'>
-            <img src="./assets/images/nightstreet.jpg" alt="nightstreet">
-            <h3>About me</h3>
-            
-            <p>Bacon ipsum dolor amet chuck fatback swine hamburger landjaeger meatball picanha ribeye buffalo bresaola shankle
-            beef. Tongue flank frankfurter burgdoggen, ham hock landjaeger pastrami prosciutto jowl shank ground round ribeye.
-            Meatball kielbasa tail tri-tip hamburger prosciutto landjaeger filet mignon leberkas jerky pastrami. Shoulder hamburger
-            drumstick, salami pastrami rump fatback pork prosciutto turkey cow brisket andouille jerky. Beef ribs tenderloin swine
-            drumstick bacon ribeye chicken.</p>
-            
-            <p>Pig ham corned beef, cow andouille turkey strip steak filet mignon venison pork meatloaf pork loin boudin burgdoggen
-            cupim. Meatloaf short loin pancetta kevin biltong picanha, prosciutto fatback ribeye jerky pastrami tail strip steak
-            shankle. Meatloaf pastrami landjaeger, pork chop prosciutto ribeye alcatra swine jerky. Andouille brisket bacon,
-            landjaeger biltong short ribs pancetta corned beef tongue bresaola chicken shoulder. Shankle biltong jowl pork loin
-            brisket salami capicola. Landjaeger pancetta drumstick cupim, swine tail frankfurter meatball tongue pig shank bacon
-            porchetta. Short ribs biltong kevin tenderloin, turkey andouille strip steak.</p>
-        </div>
+        <div id='about-me' class='about-me page-section generic-content-container'>
+            <div class="wrapper">
+                
+                <div class="row row--gutter">
+                    <div class="row--4">
+                        <picture>
+                            <source srcset='./assets/images/aboutme--larger.jpg' media='(min-width: 1290px)'>
+                            <source srcset='./assets/images/aboutme--large.jpg' media='(min-width: 1200px)'>
+                            <source srcset='./assets/images/aboutme--medium.jpg' media='(min-width: 945px)'> 
+                            <source srcset='./assets/images/aboutme--small.jpg' media='(min-width: 370px)'>
+                            <img src="./assets/images/aboutme--smaller.jpg" alt="view">
+                        </picture>
+                    </div>
+                    <div class="row--8">
+                        <h3 class='about-me__title'>About me</h3>
+                        <p>Bacon ipsum dolor amet chuck fatback swine hamburger landjaeger meatball picanha ribeye buffalo bresaola shankle
+                            beef. Tongue flank frankfurter burgdoggen, ham hock landjaeger pastrami prosciutto jowl shank ground round ribeye.
+                            Meatball kielbasa tail tri-tip hamburger prosciutto landjaeger filet mignon leberkas jerky pastrami. Shoulder hamburger
+                            drumstick, salami pastrami rump fatback pork prosciutto turkey cow brisket andouille jerky. Beef ribs tenderloin swine
+                            drumstick bacon ribeye chicken.</p>
+                            
+                            <p>Pig ham corned beef, cow andouille turkey strip steak filet mignon venison pork meatloaf pork loin boudin burgdoggen
+                            cupim. Meatloaf short loin pancetta kevin biltong picanha, prosciutto fatback ribeye jerky pastrami tail strip steak
+                            shankle. Meatloaf pastrami landjaeger, pork chop prosciutto ribeye alcatra swine jerky. Andouille brisket bacon,
+                            landjaeger biltong short ribs pancetta corned beef tongue bresaola chicken shoulder. Shankle biltong jowl pork loin
+                            brisket salami capicola.</p>
 
-        <div id='my-work' class='my-work'>
-            <h3>My Projects</h3>
-            <div>
-                <h4>project 1</h4>
-                <img src="./assets/images/stars.jpg" alt="starts">
-                <h5>description</h5>
-                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
-                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
-            
-                <h4>project 2</h4>
-                <img src="./assets/images/stars.jpg" alt="starts">
-                <h5>description</h5>
-                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
-                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
-            
-                <h4>project 3</h4>
-                <img src="./assets/images/stars.jpg" alt="starts">
-                <h5>description</h5>
-                <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
-                    picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
-            
+                            <p>Meatloaf short loin pancetta kevin biltong picanha, prosciutto fatback ribeye jerky pastrami tail strip steak
+                            shankle. Meatloaf pastrami landjaeger, pork chop prosciutto ribeye alcatra swine jerky. Andouille brisket bacon,
+                            landjaeger biltong short ribs pancetta corned beef tongue bresaola chicken shoulder. </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id='contact-me'>
-            <h3>Contact me</h3>
-            <form>
-                <label>Name:
-                  <input name="submitted-name" autocomplete="name">
-                </label>
-                <button>Save</button>
-              </form>
-              
-              <!-- Form which will send a POST request to the current URL -->
-              <form method="post">
-                <label>Name:
-                  <input name="submitted-name" autocomplete="name">
-                </label>
-                <button>Save</button>
-              </form>
-              
-              <!-- Form with fieldset, legend, and label -->
-              <form method="post">
-                <fieldset>
-                  <legend>Title</legend>
-                  <label><input type="radio" name="radio"> Select me</label>
-                </fieldset>
-              </form>
+
+        <div id='my-work' class='page-section'>
+            <div class='my-work'>
+                <div class="wrapper generic-content-container my-work--container">
+                    <h3 class='my-work--title'>My Projects</h3>
+                    <div class='row row--gutter'>
+                        <div class="row--4">
+                            <h4>Project 1</h4>
+                            <div class="my-work--image-container">
+                                <img class='my-work--img' src="./assets/images/project1.jpg" alt="starts">
+                            </div>
+                            
+                            <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                                picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+                               
+                            <a href="#" class="button button--project-Buttons">View Code</a>
+                            <a href="#" class="button button--project-Buttons">Visit</a>
+                        </div>
+                        <div class="row--4">
+                            <h4>Project 2</h4>
+                            <div class="my-work--image-container">
+                                <img class='my-work--img' src="./assets/images/project2.jpg" alt="starts">
+                            </div>
+                            
+                            <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                                picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+                                <a href="#" class="button button--project-Buttons">View Code</a>
+                                <a href="#" class="button button--project-Buttons">Visit</a>    
+                        </div>
+                        <div class="row--4">
+                            <h4>Project 3</h4>
+                            <div class="my-work--image-container">
+                                <img class='my-work--img' src="./assets/images/project3.jpg" alt="starts">
+                            </div>
+                            
+                            <p>ri-tip salami fatback turkey prosciutto ham hock jerky. Strip steak pastrami short ribs shoulder pork loin
+                                picanha leberkas kielbasa tail corned beef bresaola jerky alcatra hamburger ball tip. </p>
+                                <a href="#" class="button button--project-Buttons">View Code</a>
+                                <a href="#" class="button button--project-Buttons">Visit</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='contact-me' class='page-section'>
+            <div class="wrapper">
+                <div class="contact-me">
+                    <h3 class='contact-me--title'>Contact Page</h3>
+                    <div class="contact-me--email-container">
+                        <form action="">
+                            <div class="contact-me--input-container">
+                                <label class='contact-me--label' for="fname">First Name:</label>
+                                <input class='contact-me--input' id='fname' name='firstname' placeholder="Your first name..." type="text">
+                            </div>
+                            <div class="contact-me--input-container">
+                                <label class='contact-me--label' for='lname' for="last name">Last Name:</label>
+                                <input class='contact-me--input' id='lname' name='lastname' placeholder="Your last name..." type="text">
+                            </div>
+                            <div class="contact-me--input-container">
+                                <label class='contact-me--label' for="message">Message:</label>
+                                <textarea class='contact-me--input contact-me--message' id='message' name='message' placeholder="Say something here..." type="text"></textarea>
+                            </div>
+                            <div class="contact-me--input-container">
+                                <a href='#' class='button button--orange'>Submit</a href='#'>
+                            </div>
+                        </form>
+                    </div>
+                    <p>Or you can react me at</p>
+                    <span><img class='contact-me--image' src='./assets/images/phone.webp'></span>
+                    <p class='contact-me--phone-number'>0433 16 78 56</p>
+                    
+                </div>
+            </div>
         </div>
         
-        <footer>&copy;copyright 2020 jasonyang.tech</footer>
+        <footer class='footer'>
+            <p>&copy;copyright 2020 jasonyang.tech</p>
+        </footer>
 
         <script src="bundled.js"></script>
     </body>

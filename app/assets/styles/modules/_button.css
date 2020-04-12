@@ -7,13 +7,28 @@
 
     &__round {
         display: inline-block;
-        width: 140px;
-        height: 140px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
         background-color: rgba(20, 20, 500, .2);
         position: relative;
         transition: background-color .3s ease-out;
         box-shadow: 0px 30px 20px rgba(0, 0, 0, .3);
+
+        @mixin atMedium {
+            width: 105px;
+            height: 105px;
+        }
+
+        @mixin atLarge {
+            width: 130px;
+            height: 130px;
+        }
+
+        @mixin atLarger {
+            width: 145px;
+            height: 145px;
+        }
     }
 
     &__animation-styleA {
@@ -56,6 +71,24 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-transform: capitalize;
+        color: #FFF;
+    }
+
+    &--project-Buttons {
+        display: block;
+        width: 160px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 2px #333;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        background-color: gold;
+    }
+
+    &--orange {
+        background-color: rgba(290, 140, 50, .8);
+        padding: 10px 23px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px #333;
         color: #FFF;
     }
 }

@@ -16,13 +16,31 @@
         }
 
         li {
-            float: left;
+           float: auto;
+
+           @mixin atLarge {
+               float: right;
+           }
+
         }
 
         a {
             text-decoration: none;
             color: #FFF;
-            margin-right: 7rem;
+            margin: 1.5rem 0;
+            
+            @mixin atMedium {
+                margin-right: 2rem;
+            }
+
+            @mixin atLarge {
+                margin-right: 2.5rem;
+            }
+
+            @mixin atLarger {
+                margin-right: 3.5rem;
+            }
+
         }
     }
 

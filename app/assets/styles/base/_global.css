@@ -1,7 +1,18 @@
 html {
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-image {
+* {
+    box-sizing: border-box;
+}
+
+/*
+!important, img there is no dot before img, otherwise it won't work. this img setting is extremly important.
+make the image adjusting to the screen resizing.
+*/
+
+img {
     max-width: 100%;
+    height: auto;
 }
